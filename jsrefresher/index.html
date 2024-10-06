@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a = 60;
+        console.log(a);
+
+        //  ---- anonymous function - no name for the function ------
+        // To use it - it should be directly assigned to variable or use it as callbacks.
+
+        //ex 1 -assign to variable
+        let func = function(number) {
+            console.log(number);
+        };
+        func(5);
+
+        //use it as callback  -- setTimeout is an event in which function is called after 10 sec.
+        setTimeout(function(number){console.log("i will print after 10 sec ")}, 10000);
+
+        // ----named function ------
+        // name for the function - it is directly assigned to variable.
+        function myFunc(number) {
+            console.log(number);
+        };   
+        myFunc(10);
+
+        // Arrow function
+        let arrowFunction = (number) => {console.log(number);};
+        arrowFunction("arrowFunction output");
+
+        //function in objects
+        let obj1 = { r:5, m:10, ofunc : function (number){console.log(number)}};
+
+        //promises & callbacks-
+        //callbacks are functions that are called after specified time. Whatever scrpit below this, runs.
+        //function(number){console.log("i will print after 10 sec ")} is callback function n settimeout method.
+        setTimeout(function(number){console.log("i will print after 10 sec ")}, 10000);
+        console.log(" m neeche scrpit hu");
+        //js is asynchrornous programng language - simultaneous code runs, no blocking.
+
+        //Promises - i am doing some work -> After this i will call another function.
+        
+
+        
+
+    
+    </script>
+</head>
+<body>
+    I am learning js
+</body>
+</html>
